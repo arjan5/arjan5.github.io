@@ -3,9 +3,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>My Profile</title>
-    <meta name="author" content="A. Dhingra" />
+    <meta name="viewport" content="A. Dhingra">
     <meta name="description" content="This is a wonderful web page" />
     <link href="profileStyle.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,22 +14,39 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="projects.html">Go to projects</a></li>
-            <li><a href="https://www.linkedin.com/in/arjan-dhingra-90a9781b8/" target="_blank">My LinkedIn</a></li>
-        </ul>
-    </nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="projects.html">Go to projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/arjan-dhingra-90a9781b8/" target="_blank">My
+                LinkedIn</a>
+        </li>
+    </ul>
     <header>
         <hr>
-        <img alt="My picture" src="images/profilepic.jpg">
-        <h1>Arjan Dhingra</h1>
+        <div class="w-25 p-3">
+            <img alt="My picture" src="images/profilepic.jpg" class="img-thumbnail">
+        </div>
+        <h1 class="display-1">Arjan Dhingra</h1>
         <hr>
     </header>
-    <h2>My Profile</h2>
-    <h2>My Hobbies</h2>
-    <h2>Goals</h2>
-    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            My Profile
+          </div>
+          <div class="col">
+            My Hobbies
+          </div>
+          <div class="col">
+            My Goals
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
